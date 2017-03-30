@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>SalaryCalibrator</title>
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide {
+            display: none!important;
+        }
+    </style>
+
+    <link rel="shortcut icon" href="/server/favicon.ico" />
+
+    <!-- inject-vendor:css -->
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <link href="/content/styles.css" rel="stylesheet" />
+    <!-- endinject -->
+
+</head>
+<body>
+    <div class="" ng-controller="MyCtrl">
+        <h2>
+            Salary Calibrator
+        </h2>
+        <div class="input-row">
+            <label>Hourly</label>
+            <input type="number" name="perHour" ng-model="perHour" ng-change="setSalaryFromHour()">
+            EUR
+        </div>
+        <div class="input-row">
+            <label>Monthly</label>
+            <input type="number" name="perMonth" ng-model="perMonth" ng-change="setSalaryFromMonth()">
+            EUR
+        </div>
+        <div class="input-row">
+            <label>Yearly</label>
+            <input type="number" name="perYear" ng-model="perYear" ng-change="setSalaryFromYear()">
+            EUR
+        </div>
+        <div>
+            <button ng-click="setSalaryFromHour(1)">
+                Send my expectation to the Boss
+            </button>
+        </div>
+    </div>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/angular-ui-grid/ui-grid.js"></script>
+
+    <!-- Bootstrapping -->
+    <script src="app/app.module.js"></script>
+
+</body>

@@ -1,0 +1,13 @@
+label {
+  display: inline-block;
+  width: 70px;
+}
+
+input {
+  display: inline-block;
+  width: 70px;
+}
+
+.input-row {
+  margin-bottom: 10px;
+}

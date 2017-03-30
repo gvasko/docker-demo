@@ -1,0 +1,20 @@
+{
+  "name": "SalaryCalibrator",
+  "description": "Calibrate your salary with confidence",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "^2",
+    "angular": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-route": "1.5.x",
+    "angular-animate": "1.5.x",
+    "angular-touch": "1.5.x",
+    "angular-mocks": "1.5.x",
+    "angular-ui-grid": "3.2.x",
+    "bootstrap": "^3",
+    "underscore": "*"
+  },
+  "resolutions": {
+    "angular": "1.5.x"
+  }
+}

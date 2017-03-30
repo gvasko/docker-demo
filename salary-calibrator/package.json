@@ -1,0 +1,9 @@
+{
+  "name": "SalaryCalibrator",
+  "description": "Calibrate your salary with confidence",
+  "author": "Gabor Vasko-Szedlar",
+  "dependencies": {
+    "connect": "3.1.*",
+    "serve-static": "*"
+  }
+}
